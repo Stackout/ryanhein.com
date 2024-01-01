@@ -1,0 +1,42 @@
+
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #121212; /* Dark background */
+  color: white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+.navbar {
+  grid-row: 1 / 2;
+  background-color: #1f1f1f;
+  z-index: 999;
+}
+
+.hero-image {
+  height: calc(100vh - 56px); /* Adjust 4rem to the actual height of your navbar */
+  background-size: cover;
+  background-position: center;
+}
+
+
+.main-content {
+  /* Main Content */
+  grid-row: 3 / 4;
+  background-color: rgb(255, 255, 255)424;
+  padding: 20px;
+  color: #fff;
+}
+
+.footer {
+  /* Sticky Footer */
+  grid-row: 4 / 5;
+  background-color: #999;
+}
